@@ -30,7 +30,7 @@ export default withTRPC<AppRouter>({
         if (ctx?.req) {
           return {
             ...ctx.req.headers,
-            "x-ssr": "1", // means request is done on the server
+            "x-ssr": "1", // means request is done on the server side
           };
         }
         return {};
